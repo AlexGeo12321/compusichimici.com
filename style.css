@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main-nav {
+color: white;
+background-color: rgb(110, 221, 255);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 16px;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+flex-direction: row;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 16px;
+}
+
+.nav-links li a:hover {
+    color: rgb(110, 221, 255);
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.nav-toggle {
+    display: none;
+}
+@media (max-width: 800px) {
+    .main-nav {
+        height: 50px;}
+    
+.nav-toggle {
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+
+     }
+     .bar {
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        background-color: rgb(154, 206, 230);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    
+}
+.nav-links li a {
+    width: 100%;
+
+}
+.active {
+    display: flex;
+}
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url('background atestat.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  table, th, td {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-style: solid;
+  }
